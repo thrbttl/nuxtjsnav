@@ -1,0 +1,28 @@
+{
+  "name": "nuxtjsnav",
+  "version": "0.1.2",
+  "description": "Tahir Battal tarafından geliştirilmiş nuxt.js Navigasyon Componenti",
+  "main": "Navigation.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thrbttl/nuxtjsnav.git"
+  },
+  "keywords": [
+    "vuejs",
+    "vue.js",
+    "navigation",
+    "component",
+    "tahir",
+    "battal",
+    "nuxtjs"
+  ],
+  "author": "Tahir Battal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thrbttl/nuxtjsnav/issues"
+  },
+  "homepage": "https://github.com/thrbttl/nuxtjsnav#readme"
+}
