@@ -43,6 +43,44 @@ export default {
 ul {
   list-style: none;
 }
+span {
+  padding: 5px;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+}
+span:hover {
+  animation: 1s border-bottom linear forwards, 1s border-top linear forwards, 1s border-sides linear forwards;
+}
+@keyframes border-bottom {
+  from {
+    border-bottom: 3px solid transparent;
+  }
+  to {
+    border-bottom: 3px solid  rgba(74, 113, 74, 0.42);
+    transform: scale(1.1,1.1)  ;
+    text-shadow: 0.5px 0.5px;
+    box-shadow: 6px 6px rgb(74, 113, 74);
+  }
+}
+@keyframes border-sides {
+  from {
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+  }
+  to {
+    border-left: 3px solid rgb(74, 113, 74);
+    border-right: 3px solid  rgba(74, 113, 74, 0.42);
+
+  }
+}
+@keyframes border-top {
+  from {
+    border-top: 3px solid transparent;
+  }
+  to {
+    border-top: 3px solid rgb(74, 113, 74);
+  }
+}
 
 .items {
   color: rgb(255, 255, 255) !important;
@@ -53,7 +91,7 @@ ul {
 }
 
 .items:hover {
-  color: rgb(74, 113, 74) !important;
+  color: rgb(91, 139, 91) !important;
 }
 
 i {
@@ -68,5 +106,4 @@ i {
 i:hover {
   color: rgb(74, 113, 74);
 }
-
 </style>
