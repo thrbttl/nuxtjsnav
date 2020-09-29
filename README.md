@@ -1,4 +1,5 @@
-# vuejsnav
+# nuxtjsnav
+
 nuxt.js Navigation Responsive Component  🖖
 
 - NuxtJs projelerinde kullanabileceğiniz navigation componenti.
@@ -12,12 +13,12 @@ nuxt.js Navigation Responsive Component  🖖
 # NPM
 - npm'den yüklemek için : 
 ```
-npm i vuejsnav 
+npm i nuxtjsnav 
 ```
 ### npm'den paket olarak projeye yükledikten sonra yapılması gerekenler:
 1. Import için 
 ```nuxt.js 
-import Navigation from "../node_modules/vuejsnav/Navigation"; 
+import Navigation from "../node_modules/nuxtjsnav/Navigation"; 
 ```
 2. data içerisine : 
 ```nuxt.js  
@@ -50,7 +51,7 @@ components: {
  ```nuxt.js
  <Navigation :mainItem="this.mainItem" :menu="this.menu" />
  ```
- 5. Logo eklemek isterseniz ```node_modules/vuejsnav/NavigationTop``` dosyasının içinde yorum sarıtı olan, 4-6 arası satırları açın. img tagının src'sine ekleyeceğiniz logonun yolunu girin.
+ 5. Logo eklemek isterseniz ```node_modules/nuxtjsnav/NavigationTop``` dosyasının içinde yorum sarıtı olan, 4-6 arası satırları açın. img tagının src'sine ekleyeceğiniz logonun yolunu girin.
 
 
 
