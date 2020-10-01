@@ -1,13 +1,7 @@
 <template>
   <div class="update-container d-flex flex-column justify-content-center">
     <div class="card shadow pt-2 pb-2 mt-5">
-      <div class="card-body">
-        <div
-          @click="$emit('open-box')"
-          class="d-flex justify-content-end mr-3 mt-1"
-        >
-          <i class="fas fa-times"></i>
-        </div>
+      <div class="card-body mt-4">
         <div class="navbar-collapse">
           <ul v-for="(item, index) in menu" :key="index" class="navbar-nav">
             <router-link
@@ -19,6 +13,7 @@
           </ul>
         </div>
       </div>
+      <span @click="$emit('open-box')" class="close d-flex justify-content-center">X</span>
     </div>
   </div>
 </template>
@@ -49,15 +44,16 @@ span {
   border-top: 3px solid transparent;
 }
 span:hover {
-  animation: 1s border-bottom ease-in forwards, 1s border-top ease-in forwards, 1s border-sides linear forwards;
+  animation: 1s border-bottom ease-in forwards, 1s border-top ease-in forwards,
+    1s border-sides linear forwards;
 }
 @keyframes border-bottom {
   from {
     border-bottom: 3px solid transparent;
   }
   to {
-    border-bottom: 3px solid  rgba(74, 113, 74, 0.42);
-    transform: scale(1.1,1.1)  ;
+    border-bottom: 3px solid rgba(74, 113, 74, 0.42);
+    transform: scale(1.1, 1.1);
     text-shadow: 0.5px 0.5px;
     box-shadow: 6px 6px rgb(74, 113, 74);
   }
@@ -69,8 +65,7 @@ span:hover {
   }
   to {
     border-left: 3px solid rgb(74, 113, 74);
-    border-right: 3px solid  rgba(74, 113, 74, 0.42);
-
+    border-right: 3px solid rgba(74, 113, 74, 0.42);
   }
 }
 @keyframes border-top {
@@ -94,16 +89,19 @@ span:hover {
   color: rgb(91, 139, 91) !important;
 }
 
-i {
-  font-size: 2rem;
+.close {
+  font-size: 6rem;
   color: white;
-  padding: 10px;
+  padding: 40px;
   border-radius: 100px;
-  margin-bottom: 20px;
+  margin: 0px;
   cursor: pointer;
 }
 
-i:hover {
-  color: rgb(74, 113, 74);
+.close:hover {
+  color: rgb(255, 255, 255);
+  transform: translateY(-10px);
+  text-shadow: -10px 10px red;
+  border: none !important;
 }
 </style>
