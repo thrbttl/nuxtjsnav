@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NavigationTop :mainItem="mainItem" :menu="menu" @open-box="openBox()" />
+    <NavigationTop :mobileTitle="mobileTitle" :mainItem="mainItem" :menu="menu" @open-box="openBox()" />
     <div class="content" :class="{open : showUpdate}">
       <OpenBoxNav
         :menu="menu"
@@ -23,6 +23,9 @@ export default {
   },
 
   props: {
+    mobileTitle : {
+      required: false
+    },
     mainItem: {
       required: true,
     },
