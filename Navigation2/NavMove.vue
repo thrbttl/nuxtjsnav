@@ -91,7 +91,7 @@ header {
   width: 100%;
   z-index: 0;
   display: flex;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 button {
