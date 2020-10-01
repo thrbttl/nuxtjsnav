@@ -24,6 +24,7 @@ import Navigation from "../node_modules/nuxtjsnav/Navigation";
 ```nuxt.js  
 data() {
     return {
+      mobileTitle : "tahirbattal.com.tr", // Bu Navigation2 için örnek
       mainItem : "Anasayfa",
         // İçerik (Anasayfa) örnek olarak veridi. Değiştirerek kullanabilirsiniz.
       menu : {
@@ -49,7 +50,8 @@ components: {
  ```
  4. Template içinde tag olarak kullanıp menu elemanlarını gönderin : 
  ```nuxt.js
- <Navigation :mainItem="this.mainItem" :menu="this.menu" />
+ <Navigation :mobileTitle="mobileTitle" :mainItem="this.mainItem" :menu="this.menu" />
+ // :mobileTitle="mobileTitle" (Navigation2 için)
  ```
  5. Logo eklemek isterseniz ```node_modules/nuxtjsnav/NavigationTop``` dosyasının içinde yorum sarıtı olan, 4-6 arası satırları açın. img tagının src'sine ekleyeceğiniz logonun yolunu girin.
 
