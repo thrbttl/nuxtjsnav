@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <router-link tag="a" to="/" class="navbar-brand ml-3 mr-5">
-      <img src="../static/image/logo.png" width="30" alt="tahir battal" /> 
+      <img src="~/static/image/logo.png" width="30" alt="tahir battal" /> 
     </router-link>
     <router-link tag="a" to="/" class="navbar-brand d-md-block d-none">{{mainItem}}</router-link>
       <div class="collapse navbar-collapse" id="navbarCollapse">
