@@ -50,6 +50,6 @@ components: {
  ```nuxt.js
  <Navigation :mobileTitle="mobileTitle" :mainItem="this.mainItem" :menu="this.menu" />
  ```
- -  Logo eklemek için static klasörünün için de image adında bir klasör oluşturun ve içine `logo.png` isimli image ekleyin.
+ -  Logo eklemek için static klasörünün içinde image adında bir klasör oluşturun ve içine `logo.png` isimli image ekleyin.
 
 
