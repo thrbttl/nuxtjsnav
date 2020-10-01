@@ -1,13 +1,11 @@
 # nuxtjsnav
-
 nuxt.js Navigation Responsive Component  🖖
 
-- NuxtJs projelerinde kullanabileceğiniz navigation componenti.
+- NuxtJs projelerinde kullanabileceğiniz navigation componentleri.
 - Repositoryden kondları inceleyebilir indirip projenize component olarak dahil edebilirsiniz.
 - NPM'den paket olarak yükleyerek kullanabilirsiniz.
 
 - ** Bootstrap kullandığım için projeye bootstrap dahil etmelisiniz.
-- ** Fontawsome kullandığım için projeye fontawsome dahil etmelisiniz. (Açılır menü iconu için.)
 
 
 # NPM
@@ -16,15 +14,15 @@ nuxt.js Navigation Responsive Component  🖖
 npm i nuxtjsnav 
 ```
 ### npm'den paket olarak projeye yükledikten sonra yapılması gerekenler:
-1. Import için 
+-  Import için 
 ```nuxt.js 
 import Navigation from "../node_modules/nuxtjsnav/Navigation"; 
 ```
-2. data içerisine : 
+-  data içerisine : 
 ```nuxt.js  
 data() {
     return {
-      mobileTitle : "tahirbattal.com.tr", // Bu Navigation2 için örnek
+      mobileTitle : "tahirbattal.com.tr", // İçerik örnek olarak veridi. Değiştirerek kullanabilirsiniz.
       mainItem : "Anasayfa",
         // İçerik (Anasayfa) örnek olarak veridi. Değiştirerek kullanabilirsiniz.
       menu : {
@@ -42,19 +40,16 @@ data() {
     };
   },
 ````
-3. component olarak tanıtın : 
+- component olarak tanıtın : 
 ```nuxt.js
 components: {
     Navigation
   },
  ```
- 4. Template içinde tag olarak kullanıp menu elemanlarını gönderin : 
+ -  Template içinde tag olarak kullanıp menu elemanlarını gönderin : 
  ```nuxt.js
  <Navigation :mobileTitle="mobileTitle" :mainItem="this.mainItem" :menu="this.menu" />
- // :mobileTitle="mobileTitle" (Navigation2 için)
  ```
- 5. Logo eklemek isterseniz ```node_modules/nuxtjsnav/NavigationTop``` dosyasının içinde yorum sarıtı olan, 4-6 arası satırları açın. img tagının src'sine ekleyeceğiniz logonun yolunu girin.
-
-
+ -  Logo eklemek için static klasörünün için de image adında bir klasör oluşturun ve içine `logo.png` isimli image ekleyin.
 
 
