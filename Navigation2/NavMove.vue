@@ -1,7 +1,7 @@
 <template>
   <header class="d-md-none bg-dark">
     <router-link to="/" tag="div" class="logo"
-      ><img src="../static/image/logo.png" width="30" alt="tahir battal"
+      ><img src="~/static/image/logo.png" width="30" alt="tahir battal"
     /></router-link>
     <router-link to="/" tag="h1" class="mr-0 ml-auto">{{
       mobileTitle
