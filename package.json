@@ -1,7 +1,7 @@
 {
   "name": "nuxtjsnav",
-  "version": "0.1.2",
-  "description": "Tahir Battal tarafından geliştirilmiş nuxt.js Navigasyon Componenti",
+  "version": "0.1.8",
+  "description": "Tahir Battal tarafından geliştirilmiş nuxt.js Navigasyon Componentleri.",
   "main": "Navigation.vue",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
